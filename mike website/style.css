@@ -1,0 +1,209 @@
+:root{
+    --white: #ffffff;
+
+
+    --black: black;
+    
+   
+    
+}
+
+.light{
+    --bg: var(--white);
+    --nav-bar: var(--blue);
+    --text:var(--black);
+    --li:var(--black);
+    --liColore:var(--white);
+    
+  
+    
+    
+   
+}
+
+
+
+.dark{
+    --bg:var(--black);
+    --nav-bar:var(--black);
+    --text:var(--white);
+    --a:var(--black);
+    --li:var(--white);
+    --liColore:var(--black);
+    
+    
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text);
+    background: var(--bg);
+    pointer-events: all;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+   
+}
+
+.nav-bar{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    
+
+}
+
+.bi {
+    padding-top:1% ;
+    
+    height: 60px;
+   width: 10%;
+  color: var(--text);
+}
+
+.menu{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+ background: var(--bg);
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+
+}
+
+.see {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+ul{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+  
+   
+}
+
+li{
+    color: var(--text);
+    list-style-type: none;
+    font-weight: bold;
+    transition: all  100ms ease-in-out, color 1000ms ease-in-out;
+}
+
+li:hover{
+    background: var(--li);
+    border-radius:25px ;
+    transform: scale(1.01);
+    color: var(--liColore);
+}
+
+a{
+    text-decoration: none;
+ 
+    color: var(--a);
+}
+
+
+header{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.hero{
+    font-size: 200px;
+    padding-left: 2.5%;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+  
+    animation-name: slideInLeft;
+} 
+
+.portfolio{
+    font-size: 50px;
+    text-align: end;
+    margin-right: 10%;
+}
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+section{
+    margin-top:6%;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+}
+
+.icons{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+#icons{
+    width: 200px;
+    height: 200px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+  
+    animation-name: slideInLeft;
+}
+
+.title{
+    margin-top: 10%;
+    font-size: 50px;
+    font-weight: bolder;
+text-align: center;
+
+}
+
+p{
+    max-width: 500px;
+    font-size: 30px;
+}
+
+
+footer{
+ 
+    height: 200px;
+    background-color: var(--text);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    color:var(--text);
+}
+.iogo{
+    width: 50px;
+    height: 50px;
+ cursor: pointer;
+    align-items: center;
+    width: 100%;
+}
